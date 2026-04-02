@@ -14,7 +14,7 @@ Runs fully locally — no cloud services required.
 | ORM         | Spring Data JPA (Hibernate)             |
 | Database    | MySQL (local)                           |
 | Auth        | BCrypt password hashing, no JWT         |
-| Language    | Java 21 (compatible with Java 25)       |
+| Language    | Java 21 (not compatible with Java 25)       |
 
 ---
 
@@ -82,10 +82,11 @@ CREATE DATABASE rms_db;
 
 ---
 
-## Step 3 — Install Java 21+
+## Step 3 — Install Java 21
 
 Download from https://adoptium.net (Eclipse Temurin — free LTS)
-Java 21 and Java 25 both work with this project.
+Only Java 21 works with this project.
+(Lombok compatible with Java 21 only)
 
 Verify:
 ```cmd
